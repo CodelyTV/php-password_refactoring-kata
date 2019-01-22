@@ -1,9 +1,12 @@
-# Kata Password Refactoring
+# 👨‍💻👩‍💻 Kata Password Refactoring
+
 * [Fuente del código original](http://www.codeofaninja.com/2013/03/php-hash-password.html)
 * Fecha de publicación del código: 31 de Marzo de 2013 (eran otros tiempos)
 
-# Contexto
-Es tu primer día de trabajo en GanianesCorp. Viene el jefe y te comenta:
+# 🤔 Contexto
+
+Es tu primer día de trabajo en GanianesCorp™️. Viene el jerifante máximo de la empresa, te coje de los hombros, y te dice "Mira, te comento":
+
 >Ahora estamos en “época valle” en cuanto a carga de trabajo.
 >
 >El próximo mes contrataremos mucha gente nueva que deberá pasar por el **sistema de registro de personal**. Queremos hacer una prueba para que lo hagan **vía consola**, pero **mantendremos el registro vía web** por si vemos que los nuevos no se hacen a la UI.
@@ -12,7 +15,8 @@ Es tu primer día de trabajo en GanianesCorp. Viene el jefe y te comenta:
 
 Perfecto. Todo pinta bien. Es tu primer día, tienes una tarea concreta que no parece complicada, y además podrás lucirte dejando atrás código PHP 5.X y pasarlo a 7.
 
-# El "código"
+# 🦄 El "código"
+
 Todo son risas y unicornios hasta que ves el código. Espagueti del bueno.
 
 * Aprovecha que estás en época valle y **piensa bien el rediseño de tu mini-aplicación**. Luego tendréis muchísima faena y no podréis dedicarle tanto tiempo a ello.
@@ -23,30 +27,43 @@ Todo son risas y unicornios hasta que ves el código. Espagueti del bueno.
     * Qué **Arquitectura de Software** implementa y cómo se refleja eso en el código. A pesar de que sea una mini-aplicación, es un escenario perfecto para un ejemplo "controlado".
 * Recuerda: “El refactoring es el arte de remover la mierda por dentro sin que se note por fuera”, es decir: **todo debe seguir funcionando como hasta ahora**.
 
-# El Traficante de Enlaces
+# 🤩 El Traficante de Enlaces
+
 Te viene El Desarrollador Coleguita, que ahora está liado en otro proyecto de la empresa, y al verte un poco abrumado, te pasa los siguientes enlaces sin que lo vea nadie, royo Traficante De Enlaces:
 
-## Code Smells y Refactorings
+## Code Smells y Refactorings
+
 * [Vídeo Qué son los Code Smells y el Refactoring](http://codely.tv/screencasts/code-smells-refactoring/)
 * [Refactoring Guru](http://refactoring.guru/)
 * [SourceMaking - Refactoring](http://sourcemaking.com/refactoring)
 * [Refactoring.com - Catalog](http://refactoring.com/catalog/)
-* [Vídeos de CodelyTV Refactoring](http://codely.tv/tag/refactoring/) (esto es crema, te dice :P)
+* [Vídeos de CodelyTV Refactoring](https://www.youtube.com/playlist?list=PLZVwXPbHD1KM1rgPP3HymL7ES1v30Fi9B) (esto es crema, te dice :P)
 
 ## Patrones de diseño
+
 * [SourceMaking - Design Patterns](http://sourcemaking.com/design_patterns)
 * [Examples of Design Patterns in PHP](https://github.com/domnikl/DesignPatternsPHP) (y [2](https://github.com/zfcampus/zendcon-design-patterns))
 
-## Arquitectura
-* [Introducción Arquitectura Hexagonal – DDD](http://codely.tv/screencasts/arquitectura-hexagonal-ddd/)
-* [DDD y CQRS: Preguntas Frecuentes](http://codely.tv/screencasts/ddd-cqrs-preguntas-frecuentes/)
-* [De código acoplado al framework a microservicios pasando por DDD](http://codely.tv/screencasts/codigo-acoplado-framework-microservicios-ddd/)
+## Diseño y arquitectura de software
+
+* Vídeos
+   * [De código acoplado al framework a microservicios pasando por DDD](http://codely.tv/screencasts/codigo-acoplado-framework-microservicios-ddd/)
+   * [Playlist sobre SOLID](https://www.youtube.com/playlist?list=PLZVwXPbHD1KOICjUoGskyREC0VmOGctrm)
+   * [Introducción Arquitectura Hexagonal – DDD](http://codely.tv/screencasts/arquitectura-hexagonal-ddd/)
+   * [DDD y CQRS: Preguntas Frecuentes](http://codely.tv/screencasts/ddd-cqrs-preguntas-frecuentes/)
+* Cursos
+   * [Principios SOLID aplicados](https://pro.codely.tv/library/principios-solid-aplicados/77070/about/)
+   * [Arquitectura Hexagonal](https://pro.codely.tv/library/arquitectura-hexagonal/66748/about/)
+   * [CQRS](https://pro.codely.tv/library/cqrs-command-query-responsibility-segregation-3719e4aa/62554/about/)
+   * [Comunicación entre microservicios: Event-Driven Architecture](https://pro.codely.tv/library/comunicacion-entre-microservicios-event-driven-architecture/74800/about/)
 
 ## Passwords en PHP
+
 * [FAQ](http://php.net/manual/en/faq.passwords.php)
 * [Manual](http://php.net/manual/en/book.password.php)
 
-# El Traficante de Enlaces Psicópata
+# 🤯 El Traficante de Enlaces _Psicópata_
+
 Ojito! Al segundo día que vas al trabajo, escuchas al jefe hablando con El Traficante de Enlaces. Le está comentando que para **cuando acabe su proyecto se pondrá a trabajar contigo**.
 
 En ese momento te das cuenta que **posiblemente sea un psicópata**. _Tienes_ que dejar un buen código, el traficante psicópata trabajará contigo y no te interesa que llegue y no le guste la base de código que haya.
@@ -59,7 +76,8 @@ Para tantear el terreno, le pasas [este vídeo](https://www.youtube.com/watch?v=
 * El informe estará en el mismo repositorio (PDF o Markdown)
 * Se incluirán unas breves instrucciones de cómo ejecutar la aplicación
 
-# Aclaraciones
+# ☝️ Aclaraciones
+
 * El ejercicio de refactorizar se limita al código que se asume como propio de GanianesCorp (sistema de registro y login). No se pide entrar al código de la librería `PasswordHash.php` a menos que lo necesites
 * Los usuarios registrados actualmente deben poder seguir iniciando sesión (deberás usar la librería actual para que el login les siga funcionando)
 * Se deben usar las funciones de password hashing introducidas en PHP 5.5 para los nuevos registros ya que ésta es más óptima y segura
